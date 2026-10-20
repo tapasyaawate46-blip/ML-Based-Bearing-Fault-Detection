@@ -1,0 +1,36 @@
+Bearing Fault Detection - Random Forest
+
+Total samples: 354
+Training samples: 280
+Testing samples: 72
+Test accuracy: 100.00%
+
+Features used:
+- RMS
+- StdDev
+- PeakAmplitude
+- DominantFrequency
+- SpectralEnergy
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+          Normal     1.0000    1.0000    1.0000        48
+Inner-Race Fault     1.0000    1.0000    1.0000        24
+
+        accuracy                         1.0000        72
+       macro avg     1.0000    1.0000    1.0000        72
+    weighted avg     1.0000    1.0000    1.0000        72
+
+Confusion Matrix:
+[[48  0]
+ [ 0 24]]
+
+Feature Importance:
+DominantFrequency: 0.230000
+RMS: 0.220000
+SpectralEnergy: 0.210000
+StdDev: 0.190000
+PeakAmplitude: 0.150000
+
+Note: Training and test windows come from the same source recordings. Performance on independent recordings has not been evaluated.
